@@ -1,6 +1,6 @@
 lvim.plugins = {
   'tpope/vim-fugitive',
-  'Exafunction/codeium.vim',
+  "Exafunction/codeium.nvim",
   {
     'folke/todo-comments.nvim',
     config = function()
@@ -61,10 +61,6 @@ lvim.plugins = {
     version = "*",
     lazy = true,
     ft = "markdown"
-  },
-  {
-    'folke/noice.nvim',
-    event = 'VeryLazy'
   },
   {
     'folke/flash.nvim',

@@ -1,7 +1,8 @@
 lvim.plugins = {
-  'tpope/vim-fugitive',
   -- TODO: Make this plugin work
   "Exafunction/codeium.nvim",
+  'tpope/vim-fugitive',
+  "tpope/vim-surround",
   "mrjones2014/nvim-ts-rainbow",
   {
     'folke/todo-comments.nvim',
@@ -78,5 +79,28 @@ lvim.plugins = {
   {
     "JoosepAlviste/nvim-ts-context-commentstring",
     event = "BufRead",
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    config = function()
+      require "lsp_signature".setup({})
+    end,
+  },
+  {
+    "npxbr/glow.nvim",
+    ft = { "markdown" }
+  },
+  {
+    "ethanholz/nvim-lastplace",
+    event = "BufRead",
+    config = function()
+      require("nvim-lastplace").setup({
+        lastplace_ignore_buftype = { "quickfix", "nofile", "help" },
+        lastplace_ignore_filetype = {
+          "gitcommit", "gitrebase", "svn", "hgcommit",
+        },
+        lastplace_open_folds = true,
+      })
+    end,
   },
 }

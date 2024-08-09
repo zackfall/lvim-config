@@ -32,3 +32,6 @@ MapVisual("p", "\"_dP")
 lvim.builtin.which_key.mappings["n"] = {
   "<cmd>enew<cr>", "Create a new file"
 }
+lvim.builtin.which_key.mappings["lt"] = {
+  "<cmd>TodoTelescope<cr>", "Toggle Todos"
+}

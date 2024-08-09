@@ -1,5 +1,4 @@
 lvim.plugins = {
-  'norcalli/nvim-colorizer.lua',
   'tpope/vim-fugitive',
   'Exafunction/codeium.vim',
   {
@@ -17,6 +16,10 @@ lvim.plugins = {
         }
       }
     }
+  },
+  {
+    'norcalli/nvim-colorizer.lua',
+    opts = {}
   },
   {
     'xiyaowong/transparent.nvim',

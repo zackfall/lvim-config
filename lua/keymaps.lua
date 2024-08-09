@@ -32,9 +32,3 @@ MapVisual("p", "\"_dP")
 lvim.builtin.which_key.mappings["n"] = {
   "<cmd>enew<cr>", "Create a new file"
 }
-lvim.builtin.which_key.mappings["x"] = {
-  "<cmd>TroubleToggle<cr>", "Toggle diagnostics"
-}
-lvim.builtin.which_key.mappings["X"] = {
-  "<cmd>TodoTrouble<cr>", "Toggle Todos"
-}

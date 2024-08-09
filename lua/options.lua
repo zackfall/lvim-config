@@ -61,3 +61,6 @@ require("catppuccin").setup({
 })
 
 lvim.colorscheme = "catppuccin-mocha"
+lvim.builtin.treesitter.rainbow.enable = true
+
+vim.lsp.inlay_hint.enable(true)

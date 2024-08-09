@@ -1,12 +1,12 @@
-function MapNormal(bind, command)
+function MapNormal(bind --[[string]], command --[[string]])
   lvim.keys.normal_mode[bind] = command
 end
 
-function MapInsert(bind, command)
+function MapInsert(bind --[[string]], command --[[string]])
   lvim.keys.insert_mode[bind] = command
 end
 
-function MapVisual(bind, command)
+function MapVisual(bind --[[string]], command --[[string]])
   lvim.keys.visual_mode[bind] = command
 end
 
@@ -34,4 +34,7 @@ lvim.builtin.which_key.mappings["n"] = {
 }
 lvim.builtin.which_key.mappings["lt"] = {
   "<cmd>TodoTelescope<cr>", "Toggle Todos"
+}
+lvim.builtin.which_key.mappings["lc"] = {
+  "<cmd>Telescope lsp_references<cr>", "Find References"
 }

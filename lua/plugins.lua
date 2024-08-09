@@ -1,5 +1,6 @@
 lvim.plugins = {
   'tpope/vim-fugitive',
+  -- TODO: Make this plugin work
   "Exafunction/codeium.nvim",
   {
     'folke/todo-comments.nvim',
@@ -43,14 +44,6 @@ lvim.plugins = {
   {
     'mrcjkb/rustaceanvim',
     lazy = false
-  },
-  {
-    'rcarriga/nvim-notify',
-    config = function()
-      require('notify').setup({
-        enabled = true
-      })
-    end
   },
   {
     'stevearc/dressing.nvim',

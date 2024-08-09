@@ -2,6 +2,7 @@ lvim.plugins = {
   'tpope/vim-fugitive',
   -- TODO: Make this plugin work
   "Exafunction/codeium.nvim",
+  "mrjones2014/nvim-ts-rainbow",
   {
     'folke/todo-comments.nvim',
     config = function()
@@ -68,4 +69,14 @@ lvim.plugins = {
     }
   },
   { 'wakatime/vim-wakatime', lazy = false },
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    event = "BufRead",
+  },
 }

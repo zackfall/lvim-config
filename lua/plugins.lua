@@ -3,7 +3,6 @@ lvim.plugins = {
   "tpope/vim-surround",
   -- TODO: Make this plugin work
   "Exafunction/codeium.nvim",
-  "mrjones2014/nvim-ts-rainbow",
   {
     'folke/todo-comments.nvim',
     config = function()
@@ -103,4 +102,5 @@ lvim.plugins = {
       })
     end,
   },
+  { 'habamax/vim-godot', event = 'VimEnter' },
 }

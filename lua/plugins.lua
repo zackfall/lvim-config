@@ -102,5 +102,11 @@ lvim.plugins = {
       })
     end,
   },
-  { 'habamax/vim-godot', event = 'VimEnter' },
+  { 'habamax/vim-godot',     event = 'VimEnter' },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+  },
 }
